@@ -1,19 +1,30 @@
+---
+const pageTitle = "About me";
+---
+
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>About</title>
+        <title>{pageTitle}</title>
     </head>
     <a href="/">Home</a>
     <a href="/blog">Blog</a>
-    <a href="/about">About</a>
+    <a href="/about">About me</a>
 
     <body>
-        <h1>About me</h1>
+        <h1>{pageTitle}</h1>
 
         <p>I am currently working on learning <i>Astro</i></p>
+        <p>these are my github stats:</p>
+        <p>
+            <img
+                src="https://github-readme-stats.vercel.app/api?username=theoneand33&show_icons=true&theme=dark"
+                alt="GitHub stats"
+            />
+        </p>
     </body>
 
 
